@@ -1,0 +1,56 @@
+.contact-page {
+  padding: 50px 0;
+}
+.contact-page .main {
+  max-width: 1200px;
+  margin: auto;
+}
+.contact-page .title {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--light-orange);
+}
+.contact-page .main a {
+  color: var(--black);
+}
+.contact-page .title-component {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.contact-page .address,
+.contact-page .phone,
+.contact-page .email {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group input,
+textarea {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  border: 1px solid var(--light-orange);
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.submit-contact {
+  background-color: var(--opaque-yellow);
+  color: var(--white);
+  font-weight: 600;
+  width: auto !important;
+  padding: 10px 20px !important;
+  float: right;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.submit-contact:hover {
+  opacity: 1;
+}

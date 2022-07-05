@@ -1,0 +1,86 @@
+.product-all-page {
+  padding: 50px 0;
+}
+.product-all-page .main {
+  max-width: 1200px;
+  margin: auto;
+}
+.title-product-all {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.sort-by {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.sort-by > select {
+  padding: 10px;
+  outline: none;
+  border: 1px solid var(--light-orange);
+  cursor: pointer;
+}
+.sort-by > label {
+  padding: 10px;
+}
+.sidebar-product-all .col {
+  margin-bottom: 30px;
+}
+.sidebar-product-all .title {
+  display: flex;
+  justify-content: space-between;
+  color: var(--opaque-yellow);
+  font-weight: 800;
+}
+.sidebar-product-all .title .title-content {
+  margin-bottom: 10px;
+}
+.sidebar-product-all .list > div {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.sidebar-product-all .list-child {
+  font-weight: normal;
+}
+.sidebar-product-all .list-child li {
+  padding: 10px;
+  border-bottom: 1px solid var(--light-orange);
+  cursor: pointer;
+}
+.sidebar-product-all .add-btn,
+.sidebar-product-all .remove-btn {
+  cursor: pointer;
+}
+.sidebar-product-all .add-btn {
+  display: none;
+}
+.sidebar-product-all .form-select-color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.sidebar-product-all .form-select-color > div {
+  width: 80px;
+  padding-right: 10px;
+}
+.sidebar-product-all .form-select div {
+  margin-bottom: 15px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label {
+  background: red;
+}
+/* input[type=checkbox] {
+  visibility: hidden;
+  &:checked + label {
+    background: #0096FF;
+  }
+  &:checked + label:after {
+    opacity: 1;
+  }
+} */

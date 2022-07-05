@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+:root {
+    --opaque-yellow: #c89551;
+    --white: #ffffff;
+    --light-orange: #d3c2ae;
+    --cream: #eedfca;
+    --black: black;
+    --black-blur: #302924;
+}
+a {
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.5s;
+}
+li {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+    display: block;
+}

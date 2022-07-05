@@ -1,0 +1,19 @@
+.introduce-page {
+  padding: 50px 0;
+}
+.introduce-page .main {
+  max-width: 1200px;
+  margin: auto;
+}
+.introduce-page .title {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--light-orange);
+}
+.introduce-page .note {
+  color: red;
+  margin: 20px 0;
+}

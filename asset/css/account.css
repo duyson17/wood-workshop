@@ -1,0 +1,77 @@
+.register-page,
+.login-page {
+  padding: 50px 0;
+}
+.register-page .main,
+.login-page .main {
+  max-width: 1200px;
+  margin: auto;
+}
+.register-page .main > div,
+.login-page .main > div {
+  max-width: 400px;
+  margin: auto;
+}
+.register-page .main .title,
+.login-page .main .title {
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--light-orange);
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-control,
+.form-message {
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+  color: var(--light-orange);
+}
+.form-label {
+  font-size: 1.2rem;
+  color: gray;
+}
+.form-message {
+  font-size: 1rem;
+}
+.form-group > .form-control {
+  padding: 10px 5px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  border: 1px solid var(--light-orange);
+  border-radius: 3px;
+  outline: none;
+}
+.form-message {
+  display: block;
+}
+.form-submit {
+  background-color: var(--opaque-yellow);
+  opacity: 0.8;
+  transition: 0.5s;
+  cursor: pointer;
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  width: 50%;
+  margin: auto;
+}
+.form-submit:hover {
+  opacity: 1;
+}
+
+.form-group > .form-control:hover {
+  border-color: var(--opaque-yellow);
+}
+.form-group.invalid .form-control {
+  border-color: #f33a58;
+}
+.form-group.invalid .form-message {
+  color: #f33a58;
+}
