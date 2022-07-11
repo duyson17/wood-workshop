@@ -87,6 +87,9 @@
   .tab-section > ul {
     display: block;
   }
+  .tab-section > ul > li {
+    margin-bottom: 10px;
+  }
   .tab {
     color: var(--opaque-yellow);
     background-color: var(--white);
