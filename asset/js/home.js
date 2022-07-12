@@ -84,7 +84,6 @@ if (widthLoadStart < 470) {
 }
 window.onresize = function name() {
   var width = window.innerWidth;
-  console.log(width);
   if (width <= 470) {
     showDiscountActiveMini();
     nextDiscountProduct.onclick = function () {
@@ -127,13 +126,53 @@ function showDiscountActiveMini() {
   columnProducts[currIndexShowDiscount].classList.add("product-show");
 }
 function showDiscountActive() {
-  console.log("lớn");
   for (let i = 0; i < columnProducts.length; i++) {
     columnProducts[i].classList.remove("product-show");
   }
   columnProducts[currIndexShowDiscount].classList.add("product-show");
   columnProducts[currIndexShowDiscount + 1].classList.add("product-show");
 }
+
+// phần chạy thời gian khuyến mãi
+// ~~ giúp chuyển từ chuỗi '5' --> số 5
+var dayTimeDiscount = document.querySelector(".box-info.day");
+var hourTimeDiscount = document.querySelector(".box-info.hour");
+var minuteTimeDiscount = document.querySelector(".box-info.minute");
+var secondTimeDiscount = document.querySelector(".box-info.second");
+
+function startTimer(duration, display) {
+  var timer = duration,
+    day,
+    hour,
+    minutes,
+    seconds;
+  setInterval(function () {
+    day = parseInt(timer / 24 / 60 / 60, 10);
+    hour = parseInt((timer / 60 / 60) % 24, 10);
+    minutes = parseInt((timer / 60) % 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    day = day < 10 ? "0" + day : day;
+    hour = hour < 10 ? "0" + hour : hour;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    dayTimeDiscount.textContent = day;
+    hourTimeDiscount.textContent = hour;
+    minuteTimeDiscount.textContent = minutes;
+    secondTimeDiscount.textContent = seconds;
+
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
+}
+
+window.onload = function () {
+  var sevenDays = 7 * 24 * 60 * 60,
+    display = document.querySelector(".discount-info-time");
+  startTimer(sevenDays, display);
+};
 
 // phần show comment customer --> OK
 
@@ -162,7 +201,6 @@ setInterval(cmtCustomerActive, 5000);
 var tabs = document.querySelectorAll(".tab");
 var tabContents = document.querySelectorAll(".tabcontent");
 var showLoading = document.querySelector(".show-loading");
-console.log(showLoading);
 
 var currIndexFeature = 0;
 
